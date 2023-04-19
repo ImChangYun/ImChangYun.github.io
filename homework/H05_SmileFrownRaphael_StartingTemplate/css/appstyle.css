@@ -1,0 +1,49 @@
+html, body
+{
+	background-color:black;
+	height: 98%;
+	width: 98%;
+}
+
+
+h3 {color:white;
+	height: 15%;
+	user-select: none;
+	text-align: center;
+}
+
+
+#mySVGCanvas {
+	border: 1px solid #00f;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	background-color: white;
+
+}
+
+/* 3. Toggle Button */
+#toggleBox {
+	border: 1px solid skyblue;
+	width: 150px;
+	height: 40px;
+	margin-left: 25%;
+	background-color: pink;
+
+	background-image: url(https://www.theinvisibletourist.com/wp-content/uploads/2018/01/featured_76.jpg);
+	background-size: cover;
+	background-position: center;
+
+	padding-top: 1%;
+	text-align: center;
+	color: #3bce9c;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+
+
+
+
+

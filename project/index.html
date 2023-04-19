@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>CY's Project Diary</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+    <body>
+    
+      <!-- Main Container for Grid Layout -->
+      <div class="maincontainer">
+    
+        <!-- Background Image -->
+        <div class="bg"></div> 
+    
+        <!-- Webpage Grid Layout -->
+        <div class="grid">
+          <div class="title">&#127923CY's Weekly Diary&#127923</div>
+
+          <!-- Introduction & Welcome Message -->
+          <div class="content blackboard"> 
+                <h3>
+                  This is my weekly diary reflection in my quest to make a bowling visualizer
+                </h3>
+                <br>
+
+                <p class="bb_text"> <i><u>11 Oct 2021</u></i> <br> I designed a simple interface for visualizing the ideal trajectory of a bowling ball on a bowling lane for different lane oil lengths, as this was something I felt would be beneficial when I just started to pick up bowling. I chose this as I could utilize the knowledge of Bezier Curves, SVG graphics and Input Fields. The ball trajectory is shown by a SVG path, which animates upon entering the lane oil length in the input box. The default oil length is set to 40 as most house oil pattern length in bowling centers is around 40ft. </p>
+
+                <br>
+
+                <p class="bb_text"> <i><u>18 Oct 2021</u></i> <br> This week, I designed a simple ‘calculator’ using IF statements. I added in two input fields, RG and Differential, for the user to calculate the potential Hook Strength of a bowling ball. The Hook Strength result will be shown to the user below the input fields. The understanding of these two input values will come as second nature for seasoned bowlers. However, for beginner bowlers, this learning aid can facilitate the understanding of these values. This learning aid can also help bowlers be more informed when purchasing a new bowling ball. </p>   
+
+                <br>
+
+                <p class="bb_text"> <i><u>25 Oct 2021</u></i> <br> This week, I implemented a Randomized Quiz Generation System using a combination of Math.random() and IF statements. Upon pressing the “Start Quiz” button, the question will be generated, and the user will be quizzed on the Hook Strength of a bowling ball based on a set of random RG and Differential values. After the user has entered their answer in the textbox, they will then press the “Submit Answer” button. The button listens for the click event and runs a function to determine if the user’s answer matches the correct answer. The user will then know the results below the submission textbox. I have also added in a feature for the user to adjust the starting position of the bowling trajectory through inputting values in a textbox. I believe that the quiz is useful as a way to recall and apply their knowledge gained from the learning aid from last week. The feature to shift your starting ball trajectory is beneficial in visualizing different methods and angles in throwing the bowling ball. </p>       
+
+                <br>
+
+                <p class="bb_text"> <i><u>01 Nov 2021</u></i> <br> This week, I changed how the graphics of the bowling lane is made. Previously, it was made using raster graphics to show the design. However, to avoid any potential issues with image clarity if the browser window is too big, I decided to use vector graphics instead to draw out the lane design. A while loop was used to generate and draw the 39 boards of a lane in an array. I also made radio buttons to change the bowling trajectory between a left-handed and right-handed bowler. </p>        
+
+                <br>
+
+                <p class="bb_text"> <i><u>08 Nov 2021</u></i> <br> This week, I did some debugging for when the end of the trajectory would make a “C” shape and curve back in when the Oil Pattern Length value gets too high. This is to make the trajectory make sense and not show an impossible path. I also made a separate HTML file for the Calculator and Quiz segment. This will allow the user to move between the Bowling Trajectory Visualization and the Calculator and Quiz segment. The new HTML file will give the Calculator and Quiz more space as compared to just a sidebar before, providing greater visibility and ease of use for the user. </p>                                       
+          </div>
+    
+          <!-- Background Photo Credits -->
+          <div class="footer">
+            Background Photo by <a href="https://unsplash.com/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergei Akulich</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+  
+        </div>
+
+      </div>
+    
+    </body>
+
+</html>

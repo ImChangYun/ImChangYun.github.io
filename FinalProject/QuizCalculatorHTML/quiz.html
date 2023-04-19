@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!-- Loads Raphael library for all files in project to see -->
+        <script type="text/javascript" src="jslibs/raphael.min.js"></script>
+        <title>Beginner's Bowling Blueprint</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+    <body>
+    
+      <!-- Main Container for Grid Layout -->
+      <div class="maincontainer">
+    
+          <!-- Background Image -->
+          <div class="bg"></div> 
+      
+          <!-- Webpage Grid Layout -->
+          <div class="grid">
+            <div class="title">Beginner's Bowling Blueprint</div>
+  
+            <!-- Calculator -->
+            <div class="content board boardFont">  
+                <a href="../index.html">
+                  <input class="guideButton" type="button" id="mainPage" value="Go To: Bowling Trajectory Guide">
+                </a>       
+                <br>
+                <br>
+                <p class="font1"> Hook Potential Calculator </p>
+                <label for="RG" class="font2"> RG: </label>
+                <input type="range" id="RG2" min="2.46" max="2.8" value="2.65" step="0.01">
+                <input type="text" id="RG" value="2.65" size="1">
+                 
+                <br>
+                <label for="RG" class="font2"> Differential: </label>
+                <input type="range" id="Differential2" min="0" max="0.06" value="0.03" step="0.001">
+                <input type="text" id="Differential" value="0.030" size="1">
+                <br>       
+                <p id="hookResult" class="font2">The Hook Potential of this ball is: </p>
+                <br>
+                <p class="font3"> 
+                    Guidelines:
+                    <br>
+                    <b>RG ranges from 2.460” – 2.800”</b>
+                    <br>2.46” – 2.51” (Lower RG)
+                    <br>2.52” – 2.56” (Medium RG)
+                    <br>2.57” – 2.80” (Higher RG)
+                    <br>
+                    <br> <b>Differential ranges from 0.000” – 0.060”</b>
+                    <br>000 – 0.025 (Lower Flare Potential)
+                    <br>026 – 0.046 (Medium Flare Potential)
+                    <br>047 – 0.060 (Higher Flare Potential)
+                </p>
+    
+            </div>
+            
+            <!-- Quiz -->
+            <div class="quiz board boardFont">         
+              <p class="timerfont" id="timer">  </p>
+              <br>
+              <p class="board_small" id="question">  </p>
+              <p id="result" > </p>
+              <br>
+              <p id="sliderOutput"> Low </p>
+              <input type="button" class="startButton" id="startQuiz" value="Start Quiz!">
+              <br>
+              <input type="button" class="nextButton" id="continueQuiz" value="Next Question!">
+              <input type="range" id="quizSlider" min="0" max="4" value="0" step="1">
+              <br>
+              <input type="button" class="submitButton" id="submitQuiz" value="Submit Answer">            
+            </div>
+
+            <!-- Directory Sidebar for Trajectory Guide -->
+            <div class="sidebar"> 
+   
+            </div>
+
+
+            <!-- Background Photo Credits -->
+            <div class="footer">
+              Background  Photo by <a href="https://unsplash.com/@alevisionco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">alevision.co</a> on <a href="https://unsplash.com/s/photos/bowling-alley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+
+        </div>
+    
+
+
+
+          
+  
+  
+      </div>
+
+      </div>
+    
+    </body>
+
+</html>

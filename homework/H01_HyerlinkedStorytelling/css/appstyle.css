@@ -1,0 +1,107 @@
+html{
+	height:100%;
+	width:100%;
+}
+body {
+	height:100%;
+	width:100%;
+	background-color: Linen;  /* a predefined html color name */
+}
+
+#mainpage{ /* Landing Page background color */
+	background-color: powderblue;
+}
+
+#option1page{ /* First Choice background color */
+	background-color: aliceblue;
+}
+
+#option2page{ /* Second Choice background color */
+	background-color: aquamarine;
+}
+
+.header{ /* header design */
+	background-color: lightpink;
+	margin-right: 20%;
+	margin-left: 20%;
+	border-radius: 20px;
+	font-family: Helvetica;
+	font-size: 25px;
+	color: white;
+	text-shadow: 1px 1px slategrey;
+	text-align: center;
+}
+
+.para{ /* paragraph design */
+	background-color: floralwhite;
+	border-style: inset;
+	font-family: Helvetica;
+	font-size: 20px;
+	margin: 2%;
+	padding: 10px;
+}
+
+.quotation { /* paragraph quotation border design */
+  width: 75%;
+  padding: 5px;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  margin: auto;
+}
+
+.qmod { /* paragraph quotation text design */
+  background: black;
+  color: antiquewhite;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+.return { /* text design for words linking back to mainpage */
+	background-color: lavender;
+	font-family: monospace;
+	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	padding: 2px;
+	text-align: center;
+	/* border pulse design */
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); 
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse { /* border pulse design */
+	0% {
+		transform: scale(0.99);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.99);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+.container { /* container to house images */
+    width: 640px;
+    margin-right: auto;
+		margin-left: auto;
+}
+
+.resize { /* resize the images to fit the container */
+	max-width: 100%;
+	object-fit: contain;
+	text-align: center;
+	border: 2px solid palevioletred;
+	border-radius: 10px;
+}

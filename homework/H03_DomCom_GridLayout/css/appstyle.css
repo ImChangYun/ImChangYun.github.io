@@ -1,0 +1,92 @@
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #111;
+  /* 1. Instead of the grey background for the body of the page, use an image from the Internet. */
+  background-image: url(https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1962&q=80);
+  background-size: cover;
+}
+
+/* Sections of Layout
+-------------------------------------- */
+/* Generic styles for demo purposes
+-------------------------------------- */
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+  height:98%;
+  width:98%;
+}
+
+.container > * {
+  background-color: #ccc;
+  padding: 1em;
+  /* 3. Set the borders on all the elements of the page to be more rounded. */
+  border-radius: 30px;
+  /* 1. Instead of the grey background for the body of the page, use an image from the Internet. */
+  background-image: url(https://images.unsplash.com/photo-1528884089-4582fe06c516?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+}
+
+/* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
+.content {
+  min-height: 40%;
+  overflow-y: scroll;
+}
+
+/* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
+/* Select all elements where parent is a container */
+.container > * {
+  margin-bottom: 2%;
+}
+
+/* Now let's apply grid for wider viewports. */
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+  }
+  /* Define the grid */
+  .container {
+    display: grid;
+    grid-template-columns: 18% 60% 18%;
+    grid-gap: 2% 2%;
+    grid-template-rows: 10% auto 10%;
+  }
+  /* Place items on the grid */
+  .header {
+    grid-column: 1 / span 3;
+
+  }
+  .sidebar {
+    grid-row-end: span 2;
+    /* 5. Center the content words “nav” and “aside” in their respective elements in CSS. */
+    text-align:  center;
+  }
+
+  .content {
+    grid-column: 2;
+  }
+
+}
+
+/* 2. Instead of the background color for the “aside” element, use an image from the internet */
+.cataside {
+    background-image: url(https://www.kindpng.com/picc/m/468-4687290_cat-kawaii-tierno-galleta-galletita-cookie-cartoon-chibi.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+/* 4. On the footer only, put a orange-yellow-green color gradient from left to right. */
+.OYGradient {
+  background-image: linear-gradient(to right, orange , yellow , green);
+}
+
+/* 5. Mobile Mode Layout - Centering Text when the Grid Layout changes due to small screen size */
+.sidebar {
+  text-align:  center;
+}
+
+/* 6. Set font size of paragraphs */
+.articlefont {
+  font-size: 10px;
+}
+

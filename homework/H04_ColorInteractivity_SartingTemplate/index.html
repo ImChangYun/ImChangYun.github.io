@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>flexbox layout</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+  <body>
+    
+    <div class="container">
+      <header class="header" id="headerid">
+        <p>header</p>
+      </header>
+
+      <!-- Replace <div> with <aside> if your content has one aside. For more than one, nest <aside> elements in the <div>. -->
+      <nav class="sidebar">
+        <p>NAV</p>
+        <ol>
+          <li > <a href="../../index.html" style="font-size: 2vw; text-decoration: none;"> &#128281 </a> </li>
+          <li > <a href="#top"> top</a> </li>
+          <li > <a href="#bottom"> bottom</a></li>
+        </ol>
+      </nav>
+
+      <!-- assign3: must have id to retreive from javascript -->
+      <article class="content" id="articleid">
+        <h2 id="top"> Color Interactivity! </h2> <!-- assign3: must have id -->
+        <p class="contentpara"> <!-- assign3: must have class -->
+          You can change the color of this box using the range sliders on the right side!
+          <br>
+          <br>
+          You can click on this box to make it completely opaque while the mouse is down, and set it back to the opacity slider setting when the mouse is up!
+        </p>
+        
+      </article>
+
+      <!-- Ditto the previous note about <aside>. -->
+      <aside class="sidebar"> <!-- assign3: must have id -->
+        <p>Color Sliders</p>
+        <!-- 7. Label sliders with a class -->
+        <label for="hue" class="labelFont">Hue</label>
+        <br>
+        <input id="hue"  type= "range" step=".01" min="0" max="1" value="0.5">
+        <br>
+        <label for="saturation" class="labelFont">Saturation</label>
+        <br>
+        <input id="saturation"  type= "range" step=".01" min="0" max="1" value="0.5">
+        <br>
+        <label for="lightness" class="labelFont">Lightness</label>
+        <br>
+        <input id="lightness"  type= "range" step=".01" min="0" max="1" value="0.5">
+        <br>
+        <label for="opacity" class="labelFont">Opacity</label>
+        <br>
+        <input id="opacity"  type= "range" step=".01" min="0" max="1" value="0.5">        
+      </aside>
+
+      <footer class="footer">
+        <p>footer</p>
+      </footer>
+    </div>
+  
+
+  </body>
+</html>
+

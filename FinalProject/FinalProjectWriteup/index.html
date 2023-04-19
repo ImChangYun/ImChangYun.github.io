@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>CY's Project Diary</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+    <body>
+    
+      <!-- Main Container for Grid Layout -->
+      <div class="maincontainer">
+    
+        <!-- Background Image -->
+        <div class="bg"></div> 
+    
+        <!-- Webpage Grid Layout -->
+        <div class="grid">
+          <div class="header"> <a href="../../index.html" style="font-size: 6vh; text-decoration: none"> &#128281 </a> </div>
+          <div class="title">&#127923CY's Final Project Writeup&#127923</div>
+
+          <!-- Introduction & Welcome Message -->
+          <div class="content blackboard"> 
+                <h3>
+                  This is my Final Project Writeup on my Bowling Visualizer
+                </h3>
+                <br>
+
+                <p class="bb_text"> <i><u>14 Nov 2021</u></i> <br> I designed an introductory guide to bowling that allows the user to have some sort of idea on the ideal trajectory of a bowling ball. The visualization will be based upon multiple variables such as Oil Length of the lane, starting ball position, rotation angle, speed of ball and breakpoint board. I chose this particular project as this was something I felt would be beneficial when I just started to pick up bowling. Even after bowling for some time, I still appreciate a little help in visualizing the lane and trajectory!</p>
+                <br>
+                <p class="bb_text"> My design is made to show the bulk of the content as much as possible. This is shown in the space allocated just for the bowling lane SVG graphics. I believe that this will provide a more immersive experience. The guide is split into two HTML pages, due to the same reason of wanting to provide optimum exposure for the content. I specifically made sure to draw in the dots and arrow guides on the lane as it is critical to be used to these guides. In the real world, the bowler will use those shapes as aiming guides. By providing these aiming guides in a simulation on the website, this will allow the users to be more fluent in utilizing those guides in reality. Constant exposure through media allows for the accumulation of knowledge that will transfer to second nature on the lanes. </p>
+                <br>
+                <p class="bb_text"> Since this was a guide mainly focusing on the trajectory of a bowling ball, the first step I took was to review on the lessons on what kind of skills I can tap into to achieve it. My first thought was to utilize a Bezier curve, which looked visually well and enhanced the viewing experience. It was able to simulate how an actual ball’s curved trajectory would look like. </p>
+                <br>
+                <p class="bb_text">The next step I took was to plan out the visuals of the bowling lane, which consists of the lane boards, dots guide, arrow guide and the bowling pins. Having learnt how to utilize arrays with a While loop made it simple to set the lane boards up to have alternating colors and of equal size. The placement of the other lane visuals utilized the clear segmenting of size from the array lane boards, making it easy to place the visuals exactly at specific points. </p>
+                <br>
+                <p class="bb_text">I also utilized my knowledge gained on input fields and eventListeners to construct a panel of variables that the user can tinker with to see how it would affect the trajectory line. With the knowledge of how DOM works, I was able to link up the values of both range and text inputs so that they will update each other whenever any of their values were changed. This made the entire experience more smoother. </p>
+                <br>
+                <p class="bb_text"> After getting feedback that a bowling ball going along the trajectory line would be beneficial for the user, I attempted to do it. However, I realized that I was facing issues whereby the ball would not move at all. So I went on a google search to see if this challenge has been tackled by other people in the community. I came across the function called “animateAlong()”, which I thought that I was all set to overcoming this challenge. However, I found out that the “animateAlong()” function has since been removed. I searched up other websites and forums and finally I came across a guy who posted his workaround on jsfiddle. I went into his code and took a look at it, as we were encouraged to rip/mash/modify codes we found only and not simply copy the whole chunk. I took my time dissecting the code apart, picking out the parts that are applicable to my scenario and modifying it to suit my needs. It miraculously worked in my code and I was excited! I felt that learning moments like this are what really improve our skills as a coder.</p>
+                <br>
+                <p class="bb_text">I moved on to make a calculator to determine the potential hook strength of a bowling ball using ‘IF’ statements. Looking at the IF statements, I realized that this was a perfect compliment to my intention to make a quiz testing users on assessing the hook strength of bowling balls. This knowledge will help new bowlers to be more informed when purchasing a new bowling ball, where they will be able to select one that suits their expectations. </p>
+                <br>
+                <p class="bb_text">I felt that the questions in the quiz were relatively easy to answer in a given amount of time, so I added in a timer using Date.now() which I have learnt in class. I had to generate random questions for the quiz, so I used Math.random() and IF statements to accomplish that. </p>
+                <br>
+                <p class="bb_text">The calculations of the trajectory was extremely challenging for me, as I realized there were a lot of calculations to be made that were out of my knowledge. I had to make the decision to come up with my own way to inject some form of formula that affects accuracy, albeit far from the real world, it serves as a reminder to the user on how volatile the bowling lanes are. </p>
+                <br>
+                <p class="bb_text">I had to remove the Bezier curve that illustrates my trajectory curve as I realized some time in that I was unable to bring the highest visible point of the curve onto specific lane boards. I had to settle with using straight lines in an attempt for accuracy.</p>
+                <br>
+                <p class="bb_text">Honestly, I am not satisfied with the calculations of my trajectory as I was unable to apply the knowledge of physics that is immensely deep and profound. </p>
+                <br>
+                <p class="bb_text">If I had more time, I would invest more time in finding out how to properly project the trajectory line using proper calculations that involves more physics. </p>
+                
+          </div>
+    
+          <!-- Background Photo Credits -->
+          <div class="footer">
+            Background Photo by <a href="https://unsplash.com/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergei Akulich</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+  
+        </div>
+
+      </div>
+    
+    </body>
+
+</html>

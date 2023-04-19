@@ -1,0 +1,205 @@
+h3 {color:white;
+	height: 15%;
+	user-select: none;
+	text-align: center;
+}
+
+.font1 {
+  font-size: 1.4em;
+  color: white;
+}
+
+.font2 {
+  font-size: 0.8em;
+  color: black;
+  font-weight: bold;
+}
+
+.font3 {
+  font-size: 0.8em;
+}
+
+.timerfont {
+  font-size: 2em;
+  color: skyblue;
+}
+
+.guideButton { 
+  border-color: white;
+  border-style: outset;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.quizButton {
+  background-color: #FF8000; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.nextButton {
+  background-color: #FF8000; 
+  border-color: white;
+  border-style: outset;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.boardFont {
+  font-family: "Helvetica", cursive;
+  color: black;
+}
+
+/* Blackboard Design Small Text Style */
+.board_small {
+  font-size: 8px;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+#mySVGCanvas {
+	border: 1px solid #00f;
+	width: 70vw;
+	height: 39vh;
+	margin: auto;
+	background-color: white;
+}
+
+/*---------------------------------------------------------------
+/* CSS Reset to keep designs consistent across browsers */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  margin: 0;
+  background-color: lightpink;
+  overflow: hidden;
+}
+
+/* Container Element to contain the Grid Layout */
+.maincontainer {
+  height:100%;
+  width:100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Background Image for Webpage */
+.bg {
+  /* The image used */
+  background-image: url(../resources/background_main.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* blurring effect of background image */
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+
+/* Webpage Grid Layout - Mobile Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 10% 25% 25% 15% 10%;
+  grid-template-areas: 
+  ". title ."
+  ". sidebar ."
+  ". content ."
+  ". content ."
+  ". footer .";
+  grid-gap: 10px;
+  height: 95%;
+  width: 95%;
+
+  /* Positioning Grid above background image */
+  position: absolute;
+  top: 1%;
+  left: 0; 
+  right: 0; 
+}
+
+/* Title Grid */
+.title {
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  font-family: monospace;
+  font-size: 24px;
+  font-size: 4vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+/* Header Grid */
+.header {
+  grid-area: header;
+}
+
+/* Sidebar Grid */
+.sidebar {
+  grid-area: sidebar;
+  overflow: auto;
+}
+
+/* Content Grid */
+.content {
+  grid-area: content;
+  max-width: 100%;
+  font-size: 14px;
+  font-size: 1.8vw;
+  padding: 2%;
+  overflow: auto;
+}
+
+/* Footer Grid */
+.footer {
+  grid-area: footer;
+  color: grey;
+}
+
+/* Board Design Styling */
+.board {
+  border: 10px solid #74e3fc;
+  background-color: #f79c9c;
+}
+
+/* Webpage Grid Layout - Desktop Layout */
+@media screen and (min-width: 800px)
+{
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr 40% 40% 1fr;
+  grid-template-rows: 10% 20% 20% 20% 15% 5%;
+  grid-template-areas: 
+  "header title title ."
+  "sidebar content content ."
+  "sidebar content content ."
+  "sidebar content content ."
+  "sidebar content content ."
+  ". footer footer .";
+  grid-gap: 10px;
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  }
+}

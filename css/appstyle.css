@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat); /* Import Font */
+
+@font-face {
+  font-family: "Circula";
+  src: url('fonts/circula/circula-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Homizio Black";
+  src: url('fonts/homizio/black.ttf') format('truetype');
+
+  font-weight: normal;
+  font-stlye: black;
+}
+
+@font-face {
+  font-family: "Homizio Regular";
+  src: url('fonts/homizio/regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-stlye: regular;
+}
+
+body {
+  ...
+}
+...
+
+/* CSS Reset to keep designs consistent across browsers */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  margin: 0;
+  background-color: lightpink;
+  overflow: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+
+a:hover {
+  color: black ;
+  background-color: #cfc ;
+}
+
+/* Container Element to contain the Grid Layout */
+.maincontainer {
+  height:100%;
+  width:100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Background Image for Webpage */
+.bg {
+  /* The image used */
+  background-image: url(../resources/background.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* blurring effect of background image */
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+
+/* Webpage Grid Layout - Mobile Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 10% 25% 25% 15% 10%;
+  grid-template-areas: 
+  ". title ."
+  ". photo ."
+  ". content ."
+  ". homework ."
+  ". footer .";
+  grid-gap: 10px;
+  height: 95%;
+  width: 95%;
+
+  /* Positioning Grid above background image */
+  position: absolute;
+  top: 1%;
+  left: 0; 
+  right: 0; 
+}
+
+/* Title Grid */
+.title {
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  font-family: 'Circula';
+  font-size: 24px;
+  font-size: 4vw;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Header Grid */
+.header_left {
+  grid-area: header_left;
+}
+
+/* Header Grid */
+.header_right {
+  grid-area: header_right;     
+  text-align: right;
+}
+
+/* Sidebar Grid */
+.sidebar {
+  grid-area: sidebar;
+}
+
+/* Content Grid */
+.content {
+  grid-area: content;
+  max-width: 100%;
+  font-size: 14px;
+  font-size: 1.8vw;
+  padding: 2%;
+  overflow: auto;
+}
+
+/* Homework Section Grid */
+.homework {
+  grid-area: homework;
+  max-width: 100%;
+  font-size: 14px;
+  font-size: 1.5vw;
+  padding-left: 3vw;
+  padding-top: 0vw;
+  overflow: auto;
+}
+
+/* Footer Grid */
+.footer_left {
+  grid-area: footer_left;
+  color: grey;
+}
+
+/* Footer Grid */
+.footer_right {
+  grid-area: footer_right;
+  color: grey;
+}
+
+/* Photo Grid */
+.photo {
+  grid-area: photo;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+/* Photo Size & Repositioning */
+.photo_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.6);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Overlay Layer for Hover Text */
+.photo_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Homizio Regular', 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+/* Overlay Layer Blur Effect */
+.photo_overlay_blur {
+  backdrop-filter:  blur(5px);
+}
+
+/* Overlay Layer Text Animation */
+.photo_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+/* Overlay Layer Blur Effect - On Hover & Touch */
+.photo_overlay:hover, .photo_overlay:active {
+  opacity: 1;
+}
+
+/* Overlay Layer Text Animation - On Hover */
+.photo_overlay:hover > * {
+  transform: translateY(0);
+}
+
+/* Overlay Layer Text Animation - On Touch */
+.photo_overlay:active > * {
+  transform: translateY(0);
+}
+
+/* Overlay Layer Title Style */
+.photo_title {
+  font-family: 'Circula', 'Arial';
+  font-weight: bold;
+  font-size: 28px;
+  font-size: 6vw;
+}
+
+/* Overlay Layer Description Style */
+.photo_desc {
+  font-family: 'Homizio Regular', 'Arial';
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0.25em;
+  padding: 2%;
+  font-size: 18px;
+  font-size: 1.8vw;
+}
+
+/* Blackboard Design Styling */
+.blackboard {
+  border: 10px solid #EAB676;
+  background-color: #385723;
+  font-family: "Homizio Black", "Arial";
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Blackboard Design Title Text Style */
+.blackboard_title {
+  font-size: 10px;
+  font-size: 2.5vw;
+  font-family: "Homizio Black", "Arial";
+}
+
+/* Blackboard Design Small Text Style */
+.blackboard_small {
+  font-size: 6px;
+  font-size: 1vw;
+  font-family: "Homizio Regular", "Arial";
+}
+
+/* Blackboard Design Main Body Text Style */
+.blackboard_body {
+  font-size: 20px;
+  font-size: 2vw;
+  font-family: "Homizio Regular", "Arial";
+}
+
+/* Homework Text Spacing */
+.homework_text {
+  font-family: 'Homizio Regular';
+  justify-content: center;
+}
+
+/* Logo Size */
+
+.logo_image {
+  height: 100%;
+  max_width:100%;
+}
+
+.logo:hover {
+  background-color: transparent;
+}
+
+
+/* Webpage Grid Layout - Desktop Layout */
+@media screen and (min-width: 800px)
+{
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% 20% 20% 20% 15% 5%;
+  grid-template-areas: 
+  " header_left title title title header_right"
+  " content content content photo photo "
+  " content content content photo photo "
+  " homework homework homework photo photo "
+  " homework homework homework photo photo "
+  " homework homework homework photo photo "
+  " footer_left footer_left footer_right footer_right footer_right ";
+  grid-gap: 10px;
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  }
+}
