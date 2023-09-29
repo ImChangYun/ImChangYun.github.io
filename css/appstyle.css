@@ -12,6 +12,13 @@ body {
     font-weight: bold;
 }
 
+/* CSS */
+.card-img-top:hover {
+    opacity: 0.7; /* Reduce opacity to 70% on hover (adjust as needed) */
+    background-color: #f0f0f0; /* Change background color on hover (adjust as needed) */
+}
+
+
 /* Media Query Rules */
 
 @media (max-width: 576px) {
