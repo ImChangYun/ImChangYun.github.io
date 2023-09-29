@@ -1,116 +1,89 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-<html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/appstyle.css">
-        <title>CY's Coding Adventures</title>
-        <script defer type="text/javascript" src="appscripts/main.js">
-        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <title>Chang Yun's Portfolio</title>
     </head>
 
     <body>
-    
-      <!-- Main Container for Grid Layout -->
-      <div class="maincontainer">
-    
-        <!-- Background Image -->
-        <div class="bg"></div> 
-    
-        <!-- Webpage Grid Layout -->
-        <div class="grid">
-          <div class="title">CY's Coding Adventures</div>
+        <!-- Bootstrap Grid -->
 
-          <div class="header_right">
-            <a href="https://github.com/ImChangYun/ImChangYun.github.io" class="logo"> <img class="logo_image" src="resources/github.png"> </a>
-            <a href="https://www.linkedin.com/in/gohchangyun/" class="logo"> <img class="logo_image" src='resources/linkedin.png'> 
-            </a>
-          </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources/Goh Chang Yun_Resume_Normal.pdf">Resume</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
 
-          <!-- Introduction & Welcome Message -->
-          <div class="content blackboard"> 
-                <p class='blackboard_title'>
-                    Hi! Thanks for stopping by!
-                    <br>
-                    <font class="blackboard_small"> (*Psst* Get to know me by hovering your cursor over my picture!) </font>
-                </p>
+        <!-- Introduction Section -->
+        <div class="container mt-5">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, I'm Chang Yun </h1>
+                <p class="lead">An aspiring UI/UX Designer & Frontend Developer <br> Pursing a Major in Communications and New Media</p>
+            </div>
+        </div>
 
-                <p class="blackboard_body">
-                  This website will be showcasing some of the projects or module assignments I have done
-                  up till now. They are available in the links below!
-                </p>
 
-              
+        <!-- Portfolio Title -->
+        <div class="container mt-5">
+            <hr class="my-4">
+            <h2 class="text-center">Portfolio</h2>
+        </div>
+
+        <!-- Card Layout Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <a  href="carousell.html"><img src="resources/Carousell/Cover.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Carousell Redesign - UI/UX Case Study</strong></h5>
+                            <p class="card-text">A solo portfolio project that focuses on improving the experience of Consumer Buyers and Sellers on Carousell.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">This is some content for Card 2.</p>
+                        </div>
+                    </div>
+                </div>
+                
                 
             </div>
-    
-          <!-- Profile Picture -->
-          <div class="photo">
-                <img class="photo_img" src="resources/imagecy.jpg">
-                <!-- Bio about myself (Hover Overlay Text) -->
-                <div class="photo_overlay photo_overlay_blur">
-                  <div class="photo_title">About Me!</div>
-                  <p class="photo_desc">
-                    I am Chang Yun, a Year 2 NUS Undergraduate majoring in Communications and New Media! 
-                    My favorite food is a freshly baked croissant!
-                  </p>
-                </div>
-          </div>
-    
-          <!-- Homework Links Section -->
-          <div class="blackboard homework">
-            <div class="homework_text">
-              <p>
-                <u>Projects using Adobe Illustrator & InDesign:</u>
-                <br>
-                &#128161<a href="design_portfolio/index.html">Brand Style Guide </a>
-                <br>
-                &#128161<a href="design_portfolio/resources/Resume_Public.pdf">Designed Resume </a>
-                <br>
-                &#128161<a href="design_portfolio/resources/PC_Infographic.pdf">PC Building Infographic </a>
-                <br>
-                &#128161<a href="design_portfolio/resources/Bowling_Infographic.pdf">Types of Bowling Ball Infographic </a>
-                <br>
-                <br>
-                <u> Projects using HTML, CSS, JS </u>
-                <br>
-                &#128214<a href="FinalProject/index.html">Bowling Ball Simulator</a>
-                <br>
-                &#128214<a href="FinalProject/FinalProjectWriteup/index.html">Simulator Writeup</a>
-                <br>
-                &#128204<a href="homework/H01_HyerlinkedStorytelling/index.html">Hyperlink Task</a>
-                <br>
-                &#128204<a href="homework/H03_DomCom_GridLayout/index.html">DOM Comms with JS</a>
-                <br>
-                &#128204<a href="homework/H04_ColorInteractivity_SartingTemplate/index.html">Color Interactivity</a>
-                <br>
-                &#128204<a href="homework/H05_SmileFrownRaphael_StartingTemplate/index.html">SVG Task</a>   
-                <br> 
-                &#128204<a href="homework/H06_TimerAnimation/index.html">Animated Ball</a>
-                <br>
-                &#128204<a href="homework/H07_ListLoops_StartingTemplate/index.html">Interactive Animation</a>
-                <br>
-                &#128204<a href="homework/H08_TimerGame.StartingTemplate/www/index.html">Timer Game</a>
-                <br>
-                <br>
-                <u> Projects using Adobe Premiere Pro </u>
-                <br>
-                &#128253<a href="https://www.instagram.com/reel/CokBukADgN9/?utm_source=ig_web_button_share_sheet"> Video made for NUS Bowling </a>
+        </div>        
 
-              </p>
-            </div>
-          </div>
-    
-          <!-- Background Photo Credits -->
-          <div class="footer_left">
-            Background Photo by <a href="https://unsplash.com/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergei Akulich</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-          </div>
+       
 
-
-
-      </div>
-    
+        <script defer type="text/javascript" src="appscripts/main.js"></script>
     </body>
 
 </html>
