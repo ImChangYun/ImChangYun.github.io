@@ -15,19 +15,13 @@ body {
 /* Media Query Rules */
 
 @media (max-width: 576px) {
-    .leftCountryInfo {
-      border-right: none;
-    }
+
   }
 
 @media (max-width: 480x) {
-    .forecastWeather {
-    justify-content: flex-start;
-    }
+
 }
 
 @media (max-width: 1101px) {
-    .historyWeather {
-    justify-content: flex-start;
-    }
+
 }
