@@ -13,7 +13,7 @@ var card4 = document.getElementById('card4');
 var card5 = document.getElementById('card5');
 var card6 = document.getElementById('card6');
 var card7 = document.getElementById('card7');
-
+var card0 = document.getElementById('card0');
 
  function cardHeightMatch() {
     // Set the height of Card 2 to match Card 1
@@ -23,6 +23,7 @@ var card7 = document.getElementById('card7');
     card5.style.height = card1Height + 'px';
     card6.style.height = card1Height + 'px';
     card7.style.height = card1Height + 'px';
+    card0.style.height = card1Height + 'px';
  }
 
 cardHeightMatch();
